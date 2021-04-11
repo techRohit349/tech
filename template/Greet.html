@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+<style>
+	
+body
+{
+    background: black;
+    padding:5px;
+    margin-top:25px;
+    border:solid 2px yellow;
+    border-radius:10px;
+    
+    height:450px;
+}
+#btn
+{
+    height:40px;
+    width:100%;
+    border-radius:15px;
+    background-color:khaki;
+    color:blue;
+}
+
+#result
+{
+    font-size:80px;
+    text-align:center ;
+    color:yellow;
+    
+}
+</style>
+<script>
+	 var i=0;
+   
+function f()
+{
+var arr= document.getElementById("message");
+var res=document.getElementById("result");
+var s=arr.innerHTML;
+var temp=s.charAt(i);
+res.innerHTML+=temp;
+i++;
+}
+
+function f1()
+{
+    setInterval(f,170);
+}
+</script>
+
+    </head>
+    <body>
+   
+    <button id="btn" onclick="f1()">MESSAGE</button>
+     <p id="message">
+     HAPPY TEACHER'S  DAY 
+</p>
+  <b><i>  <p id="result"></p></i></b>
+    </div>
+    </body>
+</html>
+
+
+
+

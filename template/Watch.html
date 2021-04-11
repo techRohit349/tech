@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Watch </title>
+<link rel="icon" href="fav1.jfif" type="image/icon">
+</head>
+<style>
+p{
+ box-sizing : border-box ;
+ text-align: center;
+ background : red ;
+ height:100px;
+ width:200px ;
+font-size : 35px;
+font-family: serif ;
+color:white ;
+margin : 30px auto ;
+padding-top : 30px;
+}
+</style>
+<body>
+   <b><p id="demo"></p></b>
+
+   <script>
+      
+function f1(){
+      var date = new Date();
+      var hour = date.getHours();
+       var min = date.getMinutes();
+       var sec = date.getSeconds();
+       document.getElementById("demo").innerHTML = hour +" : ";
+        document.getElementById("demo").innerHTML +=min +" : "
+      document.getElementById("demo").innerHTML += sec;
+  }
+setInterval(f1,100);
+   </script>
+
+</body>
+</html>

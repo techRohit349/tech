@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ body{
+	background : #00ffff;
+	box-sizing : border-box ;
+	}
+div{
+	border : 3px solid black ;
+	border-radius : 20px ;
+	height : 400px ;
+	width : 500px ;
+	margin : 30px auto ;
+	padding : 20px ;
+	text-align: center;
+	color :  ;
+	background : #e699ff;
+	}
+
+#ds{
+	color : #ff0000 ;
+	font-size : 50px ;
+	padding-top: 40px ;
+	text-transform : uppercase ;
+	}
+button{
+	border : 2px solid black ;
+	border-radius : 15px ;
+	height: 40px;
+	width : 180px ;
+	background :  silver;
+	}
+</style>
+<script >
+var i = 0 ;
+
+var str2 ;	
+	
+	
+function f1()
+	{
+	if(i==0){
+	var a = prompt( "","Enter your name");
+	 str2  = "Hello ! " + a + " Have a  Good-day" ;  
+		}
+	
+	document.getElementById("ds").innerHTML += str2.charAt(i) ;
+                   i++;
+	}
+function f()
+	{
+	
+	setInterval(f1 , 100) ;
+	}
+</script>
+</head>
+<body>
+<div>
+
+<button onclick="f()"> GREET </button>
+<b><i><p id="ds"></p></b></i>
+
+</div>
+</body>
+</html>
+
+
